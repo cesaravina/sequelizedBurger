@@ -8,7 +8,7 @@ var db = require('./models');
 var router = require("./controllers/burgers_controller.js");
 
 
-// Sets up the Express app to handle data parsing
+// Set up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
@@ -24,7 +24,7 @@ app.use("/", router)
 
 
 
-// Syncing our sequelize models and then starting our express app
+// Syncing sequelize models and  starting  express app
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT  + " d(-_-)b");

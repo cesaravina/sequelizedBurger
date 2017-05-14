@@ -10,3 +10,4 @@ module.exports = function(sequelize, DataTypes) {
   console.log(`typeof ${Burger}`);
   return Burger;
 };
+

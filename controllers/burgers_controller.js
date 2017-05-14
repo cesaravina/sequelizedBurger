@@ -3,6 +3,7 @@ var router = express.Router();
 var db = require("../models");
 
 
+// Set up the router
 router.get("/", function(req, res) {
   db.Burger.findAll({}).then(function(data) {
     var hbsObject = {
