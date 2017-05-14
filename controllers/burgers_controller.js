@@ -2,11 +2,13 @@ var express = require("express");
 var router = express.Router();
 var db = require("../models");
 
+
 router.get("/", function(req, res) {
   db.Burger.findAll({}).then(function(data) {
     var hbsObject = {
       burger: data
     };
+
 
     res.render("index", hbsObject);
   });
@@ -39,4 +41,5 @@ router.post("/eatBurger", function(req, res) {
   });
 });
 
+// Export the router
 module.exports = router;
