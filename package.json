@@ -1,8 +1,19 @@
 {
-  "name": "sequelized-burger",
+  "name": "sequelizedburger",
   "version": "1.0.0",
-  "description": "a sequelized burger",
+  "description": "MySQL database Sequelized. You can eat burger, you can make more burgers.",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "init": "^0.1.2",
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,19 +22,10 @@
     "type": "git",
     "url": "git+https://github.com/cesaravina/sequelizedBurger.git"
   },
-  "author": "cesar avina",
+  "author": "cesaravina",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cesaravina/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/cesaravina/sequelizedBurger#readme",
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "dotenv": "^4.0.0",
-    "express": "^4.15.2",
-    "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.8",
-    "mysql": "^2.13.0",
-    "sequelize": "^3.30.4"
-  }
+  "homepage": "https://github.com/cesaravina/sequelizedBurger#readme"
 }
